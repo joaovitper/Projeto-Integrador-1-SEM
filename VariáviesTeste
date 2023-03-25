@@ -1,0 +1,13 @@
+	//TECLE PARA CONTINUAR
+  public static void tecleParaContinuar2() {
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("| Escolha sua alternativa:  |");
+		System.out.println("+=========================+");
+		try {
+			System.in.read();
+			entrada.nextLine();
+		} catch (Exception e) {
+		}
+	}
+
+}
