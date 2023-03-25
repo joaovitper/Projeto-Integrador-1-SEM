@@ -10,13 +10,14 @@ public class codigo {
 		Scanner entrada = new Scanner(System.in);
 		Timer time = new Timer();
 
+
 		System.out.println("Bem vindo ao Show do Milhão!");
-	    
-		int opcao, alternativa;
-		
-	    do {
-		
-	    	System.out.println("+====================+");
+
+		int opcao;
+
+		do {
+
+			System.out.println("+====================+");
 			System.out.println("|    MENU DO JOGO    |");
 			System.out.println("+====================+");
 			System.out.println("| 1 - Instruções     |");
@@ -24,50 +25,107 @@ public class codigo {
 			System.out.println("| 3 - Créditos       |");
 			System.out.println("| 4 - Sair           |");
 			System.out.println("+====================+");
-			System.out.println("Digite sua opcao: "); 
+			System.out.println("Digite sua opcao: ");
 			opcao = entrada.nextInt();
 
+			if (opcao == 1) {
+				instrucao();
 
-		 
-				if(opcao == 1) {
-				System.out.println("O jogo consistirá em um quiz contendo 10 perguntas avaliativas, que resultarão "
-				+ "no seu desempenho final");
-				Thread.currentThread();
-				Thread.sleep(3000);
-				
 			}
-				if(opcao == 2) {
-				System.out.println("A partida vai começar!");
-				System.out.println("A partida vai começar!");
-		          Thread.sleep(3000);
-		          System.out.println("PRIMEIRA PERGUNTA.");
-		            Thread.sleep(1500);
-		          System.out.println("1- Quantas Copas tem o Brasil?: ");
-		        	System.out.println("+====================+");
-					System.out.println("| A - 4              |");
-					System.out.println("| B - 3              |");
-					System.out.println("| C - 6              |");
-				    System.out.println("| D - 5              |");
-					System.out.println("+====================+");
-					alternativa
-				
-			
+			if (opcao == 2) {
+				jogar();
+
 			}
-				if(opcao == 3) {
-				System.out.println("Este, é um projeto desenvolvido pelos alunos pertencentes a Turma C de Análise e Desenvolvimento de Sistemas.");
+			if (opcao == 3) {
+				System.out.println(
+						"Este, é um projeto desenvolvido pelos alunos pertencentes a Turma C de Análise e Desenvolvimento de Sistemas do 1º Semestre.\n");
 				System.out.println("Beatriz Bizerra");
+				System.out.println("---------------");
 				System.out.println("Camille Pereira");
+				System.out.println("---------------");
 				System.out.println("Gabriel Gonzaga");
+				System.out.println("---------------");
 				System.out.println("João Pereira");
+				System.out.println("---------------");
 				System.out.println("Lucas Rodrigues");
+				System.out.println("---------------");
 				Thread.currentThread();
 				Thread.sleep(3000);
 			}
-				
-			   } while (opcao != 4); 
-	       System.out.println("Fim do jogo!");
+
+		} while (opcao != 4);
+		System.out.println("Fim do jogo!");
 	}
 
-	}
+	
 
+	
+	static void instrucao() {
+		System.out.println("O jogo consistirá em um quiz contendo 10 perguntas avaliativas, que resultarão "
+				+ "no seu desempenho final");
+		Thread.currentThread();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+	}
+	
+	
+
+	static void jogar() {
+	    Scanner leitor = new Scanner(System.in);
+		int resposta1;
+		int score = 0;
+
+		System.out.println("A partida vai começar!\n");
+	 try {
+		Thread.sleep(1500);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		System.out.println("PRIMEIRA PERGUNTA!\n");
+	    try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("1- Quantos títulos de Copa do Mundo tem o Brasil?: ");
+		System.out.println("+=========================+");
+		System.out.println("| 1) - 4                   |");
+		System.out.println("| 2) - 3                   |");
+		System.out.println("| 3) - 6                   |");
+		System.out.println("| 4) - 5                   |");
+		System.out.println("| 5) - 0                   |");
+		System.out.println("+==========================+");
+        System.out.println("| Escolha sua alternativa: |");
+        resposta1 = leitor.nextInt();
+		Thread.currentThread();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			
+			if (resposta1 == 4) {
+				System.out.println("Resposta Correta!");
+				score++;
+		}
+
+
+		}
+
+	
+	
+	}
+	
+	
+	
+	}
 
