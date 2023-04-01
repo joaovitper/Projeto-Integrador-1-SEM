@@ -1,0 +1,50 @@
+package ShowdoMilhao;
+
+import java.util.Scanner;
+
+public class jogar {
+
+	public static void jogar() {
+
+		Scanner leitor = new Scanner(System.in);
+		int resposta1;
+		int pontuacao = 0;
+
+		System.out.println("A partida vai começar!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Primeira Pergunta!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		System.out.println("1- Quantos títulos de Copa do Mundo tem o Brasil?: ");
+		System.out.println("1) - 4");
+		System.out.println("2) - 3");
+		System.out.println("3) - 6");
+		System.out.println("4) - 5");
+		System.out.println("5) - 0");
+		System.out.println("Escolha sua alternativa: |");
+		resposta1 = leitor.nextInt();
+		Thread.currentThread();
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+
+			if (resposta1 == 4) {
+				System.out.println("Resposta Correta!");
+				pontuacao++;
+			}
+		}
+
+	}
+}
