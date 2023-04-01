@@ -1,0 +1,23 @@
+package ShowdoMilhao;
+
+public class instrucao {
+
+	public static void instrucao()throws InterruptedException {
+		System.out.println("Olá jogador, bem vindo ao “Show do Milhão”!\r\n"
+				+ "\r\n"
+				+ "O jogo consiste basicamente em responder corretamente 10 \nperguntas tendo em conta que terá 5 escolhas em cada uma, \nalguns pontos importantes do jogo são:\r\n"
+				+ "\r\n"
+				+ "Começamos com um valor de mil reais e ele aumenta em cada reposta correta;\r\n"
+				+ "Se caso você errar a pergunta voltará para o inicio do jogo, \nlevamos em conta que se houver algum acerto no caminho,\no valor das perguntas será somado e dado ao jogador.\r\n"
+				+ "Boa sorte! =) \n");
+		Thread.currentThread();
+		try {
+			Thread.sleep(3500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+}
+}
