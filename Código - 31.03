@@ -1,11 +1,11 @@
 package ShowdoMilhao;
 
-import java.util.Scanner;
 import java.util.Timer;
+import java.util.Scanner;
 
 public class codigo {
 
-	public static void main(String[] args)throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException {
 
 		Scanner entrada = new Scanner(System.in);
 		Timer time = new Timer();
@@ -13,33 +13,42 @@ public class codigo {
 		sair sair = new sair();
 		jogar jogar = new jogar();
 
-
 		System.out.println("Bem vindo ao Show do Milhão!");
 
 		int opcao;
 
+		do {
 
-		System.out.println("----- MENU -----");
-        System.out.println("1. Instruções");
-        System.out.println("2. Iniciar Jogo");
-        System.out.println("3. Sair");
-		System.out.println("----------------");
-		System.out.printf("Escolha sua opção: ");
-	    opcao = entrada.nextInt();
+			System.out.println("----- MENU -----");
+			System.out.println("1. Instruções");
+			System.out.println("2. Iniciar Jogo");
+			System.out.println("3. Sair");
+			System.out.println("----------------");
+			System.out.printf("Escolha sua opção: ");
+			opcao = entrada.nextInt();
 
-			if (opcao == 1) {
+			switch (opcao) {
+
+			case 1:
 				instrucao.instrucao();
 
-			}
-			if (opcao == 2) {
+				break;
+
+			case 2:
+
 				jogar.jogar();
+				break;
 
-			}
-			if (opcao == 3) {
+			case 3:
+
 				sair.sair();
+				break;
 
+			default:
+				System.out.println("Opção inválida!");
+			}
+
+		} while (opcao != 4);
 	}
-}
-}
 
-
+}
