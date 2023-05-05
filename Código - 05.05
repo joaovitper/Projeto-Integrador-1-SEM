@@ -7,11 +7,13 @@ public class codigo {
 
 	public static void main(String[] args) throws InterruptedException {
 
+
 		Scanner entrada = new Scanner(System.in);
 		Timer time = new Timer();
 		instrucao instrucao = new instrucao();
 		sair sair = new sair();
 		jogar jogar = new jogar();
+		boolean menu = false;
 
 		System.out.println("Bem vindo ao Show do Milhão!");
 
@@ -49,6 +51,6 @@ public class codigo {
 			}
 
 		} while (opcao != 4);
-	}
-
+		
+}
 }
