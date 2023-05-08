@@ -27,17 +27,24 @@ public class jogar {
 
 		if (pergunta01() == 1) {
 			tecleParaContinuar();
-			pergunta02(); 
-			tecleParaContinuar();
 
 		} else {
 			System.out.println("Reposta Errada!\n");
 			System.out.println("Sua pontuação foi de: R$ " + pontuacao);
 			tecleParaSair();
 		}
+		
+		if (continuaJogo) {
+			if (pergunta02() == 1) {
+				tecleParaContinuar();
+			} else {
+				System.out.println("Reposta Errada!\n");
+				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
+				tecleParaSair();
+			}
+		}
 
 		if (continuaJogo) {
-
 			if (pergunta03() == 1) {
 				tecleParaContinuar();
 
@@ -46,28 +53,82 @@ public class jogar {
 				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
 				tecleParaSair();
 			}
+		}
 
-			if (continuaJogo) {
-				if (pergunta04() == 1) {
-					tecleParaContinuar();
+		if (continuaJogo) {
+			if (pergunta04() == 1) {
+				tecleParaContinuar();
 
-				} else {
-					System.out.println("Reposta Errada!\n");
-					System.out.println("Sua pontuação foi de: R$ " + pontuacao);
-					tecleParaSair();
-				}
-				if (continuaJogo) {
-					pergunta05();
-					if (pergunta06() == 1) {
-						tecleParaContinuar();
-						pergunta06();
+			} else {
+				System.out.println("Reposta Errada!\n");
+				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
+				tecleParaSair();
+			}
+		}
 
-					} else {
-						System.out.println("Reposta Errada!\n");
-						System.out.println("Sua pontuação foi de: R$ " + pontuacao);
-						tecleParaSair();
-					}
-				}
+		if (continuaJogo) {
+			if (pergunta05() == 1) {
+				tecleParaContinuar();
+
+			} else {
+				System.out.println("Reposta Errada!\n");
+				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
+				tecleParaSair();
+			}
+		}
+
+		if (continuaJogo) {
+			if (pergunta06() == 1) {
+				tecleParaContinuar();
+
+			} else {
+				System.out.println("Reposta Errada!\n");
+				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
+				tecleParaSair();
+			}
+		}
+
+		if (continuaJogo) {
+			if (pergunta07() == 1) {
+				tecleParaContinuar();
+
+			} else {
+				System.out.println("Reposta Errada!\n");
+				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
+				tecleParaSair();
+			}
+		}
+
+		if (continuaJogo) {
+			if (pergunta08() == 1) {
+				tecleParaContinuar();
+
+			} else {
+				System.out.println("Reposta Errada!\n");
+				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
+				tecleParaSair();
+			}
+		}
+
+		if (continuaJogo) {
+			if (pergunta09() == 1) {
+				tecleParaContinuar();
+
+			} else {
+				System.out.println("Reposta Errada!\n");
+				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
+				tecleParaSair();
+			}
+		}
+
+		if (continuaJogo) {
+			if (pergunta10() == 1) {
+				tecleParaContinuar();
+
+			} else {
+				System.out.println("Reposta Errada!\n");
+				System.out.println("Sua pontuação foi de: R$ " + pontuacao);
+				tecleParaSair();
 			}
 		}
 
@@ -114,7 +175,6 @@ public class jogar {
 			pontuacao++;
 			return 1;
 		} else {
-			System.out.println("Resposta Errada!");
 			return 0;
 		}
 	}
@@ -143,12 +203,18 @@ public class jogar {
 			pontuacao++;
 			return 1;
 		} else {
-
 			return 0;
 		}
 	}
 
 	static int pergunta04() {
+		System.out.println("Quarta Pergunta!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("4- Como se chama o estudo entre palavras e significados? ");
 		System.out.println("1) - Fonética");
 		System.out.println("2) - Filosofia");
@@ -163,12 +229,18 @@ public class jogar {
 			pontuacao++;
 			return 1;
 		} else {
-			System.out.println("Resposta Errada!");
 			return 0;
 		}
 	}
 
 	static int pergunta05() {
+		System.out.println("Quinta Pergunta!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("5- Que animal da fauna brasileira está retratado na nota de 10 reais? ");
 		System.out.println("1) - Jabuti");
 		System.out.println("2) - Onça");
@@ -183,12 +255,18 @@ public class jogar {
 			pontuacao++;
 			return 1;
 		} else {
-			System.out.println("Resposta Errada!");
 			return 0;
 		}
 	}
 
 	static int pergunta06() {
+		System.out.println("Sexta Pergunta!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("6- A compensação por perda é chamada de: ");
 		System.out.println("1) - Déficit");
 		System.out.println("2) - Indenização");
@@ -203,12 +281,18 @@ public class jogar {
 			pontuacao++;
 			return 1;
 		} else {
-			System.out.println("Resposta Errada!");
 			return 0;
 		}
 	}
 
 	static int pergunta07() {
+		System.out.println("Sétima Pergunta!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("7- Qual montanha se localiza entre a fronteira do Tibet com o Nepal? ");
 		System.out.println("1) - Monte Everest");
 		System.out.println("2) - Rocinha Community");
@@ -224,12 +308,18 @@ public class jogar {
 			;
 			return 1;
 		} else {
-			System.out.println("Resposta Errada!");
 			return 0;
 		}
 	}
 
 	static int pergunta08() {
+		System.out.println("Oitava Pergunta!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("8- Qual flor é o símbolo nacional do Egito e foi considerada sagrada na antiguidade? ");
 		System.out.println("1) - Rosa");
 		System.out.println("2) - Lírio");
@@ -244,12 +334,18 @@ public class jogar {
 			pontuacao++;
 			return 1;
 		} else {
-			System.out.println("Resposta Errada!");
 			return 0;
 		}
 	}
 
 	static int pergunta09() {
+		System.out.println("Nona Pergunta!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("9- Quem compôs o Hino da Independência? ");
 		System.out.println("1) - Tom Jobim");
 		System.out.println("2) - Catroz Alves");
@@ -264,12 +360,18 @@ public class jogar {
 			pontuacao++;
 			return 1;
 		} else {
-			System.out.println("Resposta Errada!");
 			return 0;
 		}
 	}
 
 	static int pergunta10() {
+		System.out.println("Décima Pergunta!\n");
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
 		System.out.println("10- Quando começou e terminou a primeira Guerra Mundial? ");
 		System.out.println("1) - 1914 - 1918");
 		System.out.println("2) - 1902 - 1930");
@@ -284,7 +386,6 @@ public class jogar {
 			pontuacao++;
 			return 1;
 		} else {
-			System.out.println("Resposta Errada!");
 			return 0;
 		}
 	}
